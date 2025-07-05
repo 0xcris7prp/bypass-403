@@ -23,32 +23,21 @@ cd bypass403
 chmod +x bypass403.py
 To make it globally executable:
 
-bash
-Copy
-Edit
 sudo mv bypass403.py /usr/local/bin/bypass403
-🧪 Usage
+
+## 🧪Usage
 ▶️ Test a single URL:
-bash
-Copy
-Edit
+
 bypass403 -u https://target.com/secret
 📁 Test multiple URLs from a file:
-bash
-Copy
-Edit
+
 bypass403 -f urls.txt
 📌 Make sure each line in urls.txt is a full URL with path, for example:
 
-arduino
-Copy
-Edit
 https://admin.example.com/hidden
 http://api.example.com/private
-📝 Output Example
-csharp
-Copy
-Edit
+📝 Output Example:
+
 [+] Testing: https://target.com/admin
 [403] https://target.com/admin
 [200] https://target.com/admin/..;
